@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    
+    <style>
+      body{
+        
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      }
+
+      h1{
+        align-self: start;
+        position: relative;
+          left: 180px;
+      }
+      
+      .pricing-container{
+        display: flex;
+        height: 100vh;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+          right: 200px;
+        
+        
+      }
+
+      .pricing-plan { 
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        flex-basis: 350px;
+        height: 550px;
+        border-radius: 25px;
+        align-content: center;
+        position: relative;
+          top: 70px;
+        
+      }
+
+      .plan-title {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: "Libre Baskerville", serif;
+        display: inline-block;
+
+        position: relative;
+          bottom: 80px;
+          left: 22px;
+          
+      }
+
+      .plan-price{
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: "Libre Baskerville", serif;
+        text-align: center;
+        position: relative;
+          bottom: 20px;
+      }
+
+      .plan-button{
+        background-color: orange;
+        color: white;
+        width: 80px;
+        height: 30px;
+        border-radius: 7px;
+        border: none;
+        position: relative;
+          top: 70px;
+          left: 120px;
+        
+      }
+
+      .plan-features{
+        list-style-type: none;
+        font-size: 20px;
+        position: relative;
+          top: 20px;
+      }
+
+      
+
+    
+    
+
+
+
+      /* Hint: What can you do with a media query and flexbox? */
+      /* @media (max-width: 1250px) {
+
+
+        .pricing-container{
+          flex-direction: column;
+          border: 5px solid black;
+          height: 200vh;
+          position: relative;
+            right: 350px;
+        }
+
+        .pricing-plan{
+          width: 260px;
+        }
+
+        .plan-title{
+          position: relative;
+            top: 0.1px;
+            
+            
+          font-size: 20px;
+        }
+
+        .plan-price{
+          position: relative;
+            top: 10px;
+          font-size: 27px;
+        }
+
+        .plan-features{
+          font-size: 17px;
+          position: relative;
+            top: 10px;
+        }
+
+        .plan-button{
+          position: relative;
+            top: 15px;
+            left: 90px;
+            
+        }
+      } */
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+    <h1>RB Web Design Agency</h1>
+
+
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>❌ Custom Domain</li>
+          <li>❌ Priority Support</li>
+          <li>❌ Multi-Device Sync</li>
+          <li>✅ Basic Security</li>
+          <li>❌ Data Backup</li>
+          <li>❌ API Access</li>
+          <li>✅ Limited Reports</li>
+          <li>✅ Community Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+
+
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ Custom Domain</li>
+          <li>✅ Priority Email Support</li>
+          <li>✅ Multi-Device Sync</li>
+          <li>✅ Enhanced Security</li>
+          <li>✅ Weekly Data Backup</li>
+          <li>❌ API Access</li>
+          <li>✅ Advanced Reports</li>
+          <li>✅ Access to Limited Integrations</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+
+
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ Custom Domain</li>
+          <li>✅ Priority 24/7 Support</li>
+          <li>✅ Multi-Device Sync</li>
+          <li>✅ Advanced Security</li>
+          <li>✅ Daily Data Backup</li>
+          <li>✅ API Access</li>
+          <li>✅ Full Reports & Analytics</li>
+          <li>✅ Access to All Integrations</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+
+
+    </div>
+  </body>
+</html>
